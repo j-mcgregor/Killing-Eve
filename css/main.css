@@ -1,0 +1,125 @@
+@font-face {
+  font-family: Quiet Horror Story;
+  src: url("../fonts/Quiet Horror Story.ttf"); }
+@font-face {
+  font-family: FilthofIcarusRegular;
+  src: url("../fonts/FilthofIcarus-Regular.ttf"); }
+@font-face {
+  font-family: PCBius;
+  src: url("../fonts/PCBius.ttf"); }
+.introHeader,
+.introCaption,
+.introDate,
+.footer {
+  letter-spacing: 6px;
+  text-align: center;
+  color: white;
+  font-family: 'Quiet Horror Story'; }
+
+.introHeader {
+  font-size: 9em;
+  padding: 1em 0 .1em; }
+
+.introCaption {
+  font-size: 1.4em;
+  padding: .2em 1em;
+  font-family: 'FilthofIcarusRegular'; }
+
+.introDate {
+  font-size: 1.8em;
+  padding: 1em 1em;
+  font-family: 'PCBius'; }
+
+.footer {
+  font-size: .8em;
+  padding: .5em 1em;
+  font-family: sans-serif; }
+
+@media screen and (max-width: 600px) {
+  .introHeader {
+    font-size: 7em; }
+
+  .introCaption {
+    font-size: 1.1em; }
+
+  .introDate {
+    font-size: 1.4em; }
+
+  .footer {
+    font-size: .8em;
+    padding: .5em 1em;
+    font-family: sans-serif; } }
+@media screen and (max-width: 497px) {
+  .introHeader {
+    font-size: 6em; }
+
+  .introCaption {
+    padding-top: 2em;
+    font-size: 1.1em;
+    max-width: 350px;
+    margin: auto; }
+
+  .introDate {
+    padding-top: 2em;
+    font-size: 1.4em; }
+
+  .footer {
+    font-size: .8em;
+    padding: .5em 1em;
+    font-family: sans-serif; } }
+html, body {
+  margin: 0;
+  position: relative; }
+
+.bg-img {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: url("../img/RelievedBigAmoeba-size_restricted.gif") center center no-repeat;
+  background-size: cover;
+  z-index: -1; }
+  .bg-img:before {
+    content: '';
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right, #0d1a22, #6b1e10);
+    opacity: .8; }
+  .bg-img:after {
+    content: '';
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0), #000000); }
+
+.icon-container {
+  position: fixed;
+  bottom: 100px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-align: center; }
+  .icon-container .icon {
+    padding: 1em; }
+    .icon-container .icon a i {
+      color: white;
+      font-size: 1.5em;
+      transition: .2s; }
+      .icon-container .icon a i:hover {
+        color: #f94e4e; }
+
+.footer {
+  position: fixed;
+  bottom: 30px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-align: center; }
+
+/*# sourceMappingURL=main.css.map */
