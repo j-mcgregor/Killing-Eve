@@ -33,7 +33,6 @@
   margin: auto;
 
   h1 {
-    overflow: auto;
     font-size: 200px;
     margin-bottom: 0;
   }
@@ -59,8 +58,12 @@
   .titleContainer {
 
     h1 {
-      font-size: 120px;
+      font-size: 108px;
       text-align: right;
+      width: 50%;
+      right: 40px;
+      top: 90px;
+      position: absolute;
     }
 
   }

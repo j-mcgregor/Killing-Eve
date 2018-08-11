@@ -21,7 +21,6 @@
   text-align: center;
   margin: auto; }
   .titleContainer h1 {
-    overflow: auto;
     font-size: 200px;
     margin-bottom: 0; }
 
@@ -30,8 +29,12 @@
     font-size: 160px; } }
 @media only screen and (max-width: 420px) {
   .titleContainer h1 {
-    font-size: 120px;
-    text-align: right; } }
+    font-size: 108px;
+    text-align: right;
+    width: 50%;
+    right: 40px;
+    top: 90px;
+    position: absolute; } }
 html, body {
   margin: 0;
   position: relative;
