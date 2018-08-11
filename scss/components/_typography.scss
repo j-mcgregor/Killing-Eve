@@ -1,6 +1,11 @@
 // Fonts
 
 @font-face {
+  font-family: Killing Eve;
+  src: url('../fonts/KILLING EVE FONT.otf');
+}
+
+@font-face {
   font-family: Quiet Horror Story;
   src: url('../fonts/Quiet Horror Story.ttf');
 }
@@ -16,81 +21,68 @@
 }
 
 // Headers
-.introHeader,
-.introCaption,
-.introDate,
-.footer {
-  letter-spacing: 6px;
-  text-align: center;
+.titleContainer {
+  width: 100vw;
   color: white;
-  font-family: 'Quiet Horror Story';
-}
+  font-family: 'Killing Eve';
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
 
-.introHeader {
-  font-size: 9em;
-  padding: 1em 0 .1em;
-}
-
-.introCaption {
-  font-size: 1.4em;
-  padding: .2em 1em;
-  font-family: 'FilthofIcarusRegular';
-}
-
-.introDate {
-  font-size: 1.8em;
-  padding: 1em 1em;
-  font-family: 'PCBius';
-}
-
-.footer {
-  font-size: .8em;
-  padding: .5em 1em;
-  font-family: sans-serif;
-}
-
-@media screen and (max-width: 600px) {
-
-  .introHeader {
-    font-size: 7em;
+  h1 {
+    overflow: auto;
+    font-size: 200px;
+    margin-bottom: 0;
   }
 
-  .introCaption {
-    font-size: 1.1em;
-  }
+  h5 {
+    overflow: auto;
 
-  .introDate {
-    font-size: 1.4em;
-  }
-
-  .footer {
-    font-size: .8em;
-    padding: .5em 1em;
-    font-family: sans-serif;
+    font-size: 40px;
+    letter-spacing: 6px;
   }
 }
 
-@media screen and (max-width: 497px) {
 
-  .introHeader {
-    font-size: 6em;
+
+// Tablet
+@media only screen and (max-width: 600px) {
+  .titleContainer {
+
+    h1 {
+      font-size: 160px;
+    }
+
+    h5 {
+      // margin-top: -80px;
+      font-size: 40px;
+      letter-spacing: 6px;
+    }
+  }
+}
+
+// Phone
+@media only screen and (max-width: 420px) {
+  img.bg-img {
+    max-width: 100%;
+    max-height: 100vh;
   }
 
-  .introCaption {
-    padding-top: 2em;
-    font-size: 1.1em;
-    max-width: 350px;
-    margin: auto;
+  .titleContainer {
+
+    h1 {
+      font-size: 120px;
+    }
+
+
+    h5 {
+      margin-top: 80px;
+      font-size: 40px;
+      letter-spacing: 6px;
+    }
   }
 
-  .introDate {
-    padding-top: 2em;
-    font-size: 1.4em;
-  }
-
-  .footer {
-    font-size: .8em;
-    padding: .5em 1em;
-    font-family: sans-serif;
-  }
 }

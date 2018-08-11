@@ -2,43 +2,22 @@
 html, body {
   margin: 0;
   position: relative;
+  background: #d23553;
 }
 
-.bg-img {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background: url('../img/RelievedBigAmoeba-size_restricted.gif') center center no-repeat;
-  // background: url('https://i.pinimg.com/originals/4a/1d/58/4a1d5825161894d0f86df8784130b7c5.jpg') center center no-repeat;
-  background-size: cover;
-  z-index: -1;
+img.bg-img {
+  overflow: auto;
 
-  &:before {
-    content: '';
-    z-index: 0;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-image: linear-gradient(to bottom right,#0d1a22,#6b1e10);
-    opacity: .8;
-  }
-  &:after {
-    content: '';
-    z-index: 0;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-image: radial-gradient(circle,rgba(#000000, 0),#000000);
-    // opacity: .7;
-  }
+  position: absolute;
+  width: auto;
+  height: 100vh;
+  background-size: cover;
+  left:-10px;
+  transform: scale(1.1);
 }
 .icon-container {
   position: fixed;
-  bottom: 100px;
+  bottom: 0;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -62,17 +41,40 @@ html, body {
 }
 
 .footer {
+  overflow: hidden;
   position: fixed;
   bottom: 30px;
   display: flex;
   justify-content: center;
   width: 100%;
   text-align: center;
+  background: none;
+  font-family: 'PCBius';
+  color: white;
+
+  h4 {
+    font-size: 1.1em;
+    letter-spacing: 3px;
+  }
+
 }
 
 // Tablet
+@media only screen and (max-width: 600px) {
+  img.bg-img {
+    height: 100vh;
+    background-size: cover;
+    left:-10px;
+    transform: scale(1.1);
+  }
+}
 
-@media screen and (min-width: 600px) {
-
-
+// Phone
+@media only screen and (max-width: 420px) {
+  img.bg-img {
+    height: 100vh !important;
+    background-size: cover;
+    left:-10px;
+    transform: scale(1.1);
+  }
 }

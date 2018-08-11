@@ -1,4 +1,7 @@
 @font-face {
+  font-family: Killing Eve;
+  src: url("../fonts/KILLING EVE FONT.otf"); }
+@font-face {
   font-family: Quiet Horror Story;
   src: url("../fonts/Quiet Horror Story.ttf"); }
 @font-face {
@@ -7,100 +10,59 @@
 @font-face {
   font-family: PCBius;
   src: url("../fonts/PCBius.ttf"); }
-.introHeader,
-.introCaption,
-.introDate,
-.footer {
-  letter-spacing: 6px;
-  text-align: center;
+.titleContainer {
+  width: 100vw;
   color: white;
-  font-family: 'Quiet Horror Story'; }
+  font-family: 'Killing Eve';
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: auto; }
+  .titleContainer h1 {
+    overflow: auto;
+    font-size: 200px;
+    margin-bottom: 0; }
+  .titleContainer h5 {
+    overflow: auto;
+    font-size: 40px;
+    letter-spacing: 6px; }
 
-.introHeader {
-  font-size: 9em;
-  padding: 1em 0 .1em; }
+@media only screen and (max-width: 600px) {
+  .titleContainer h1 {
+    font-size: 160px; }
+  .titleContainer h5 {
+    font-size: 40px;
+    letter-spacing: 6px; } }
+@media only screen and (max-width: 420px) {
+  img.bg-img {
+    max-width: 100%;
+    max-height: 100vh; }
 
-.introCaption {
-  font-size: 1.4em;
-  padding: .2em 1em;
-  font-family: 'FilthofIcarusRegular'; }
-
-.introDate {
-  font-size: 1.8em;
-  padding: 1em 1em;
-  font-family: 'PCBius'; }
-
-.footer {
-  font-size: .8em;
-  padding: .5em 1em;
-  font-family: sans-serif; }
-
-@media screen and (max-width: 600px) {
-  .introHeader {
-    font-size: 7em; }
-
-  .introCaption {
-    font-size: 1.1em; }
-
-  .introDate {
-    font-size: 1.4em; }
-
-  .footer {
-    font-size: .8em;
-    padding: .5em 1em;
-    font-family: sans-serif; } }
-@media screen and (max-width: 497px) {
-  .introHeader {
-    font-size: 6em; }
-
-  .introCaption {
-    padding-top: 2em;
-    font-size: 1.1em;
-    max-width: 350px;
-    margin: auto; }
-
-  .introDate {
-    padding-top: 2em;
-    font-size: 1.4em; }
-
-  .footer {
-    font-size: .8em;
-    padding: .5em 1em;
-    font-family: sans-serif; } }
+  .titleContainer h1 {
+    font-size: 120px; }
+  .titleContainer h5 {
+    margin-top: 80px;
+    font-size: 40px;
+    letter-spacing: 6px; } }
 html, body {
   margin: 0;
-  position: relative; }
+  position: relative;
+  background: #d23553; }
 
-.bg-img {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background: url("../img/RelievedBigAmoeba-size_restricted.gif") center center no-repeat;
+img.bg-img {
+  overflow: auto;
+  position: absolute;
+  width: auto;
+  height: 100vh;
   background-size: cover;
-  z-index: -1; }
-  .bg-img:before {
-    content: '';
-    z-index: 0;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-image: linear-gradient(to bottom right, #0d1a22, #6b1e10);
-    opacity: .8; }
-  .bg-img:after {
-    content: '';
-    z-index: 0;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-image: radial-gradient(circle, rgba(0, 0, 0, 0), #000000); }
+  left: -10px;
+  transform: scale(1.1); }
 
 .icon-container {
   position: fixed;
-  bottom: 100px;
+  bottom: 0;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -115,11 +77,31 @@ html, body {
         color: #f94e4e; }
 
 .footer {
+  overflow: hidden;
   position: fixed;
   bottom: 30px;
   display: flex;
   justify-content: center;
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  background: none;
+  font-family: 'PCBius';
+  color: white; }
+  .footer h4 {
+    font-size: 1.1em;
+    letter-spacing: 3px; }
 
-/*# sourceMappingURL=main.css.map */
+@media only screen and (max-width: 600px) {
+  img.bg-img {
+    height: 100vh;
+    background-size: cover;
+    left: -10px;
+    transform: scale(1.1); } }
+@media only screen and (max-width: 420px) {
+  img.bg-img {
+    height: 100vh !important;
+    background-size: cover;
+    left: -10px;
+    transform: scale(1.1); } }
+
+/*# sourceMappingURL=style.css.map */
