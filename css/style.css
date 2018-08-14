@@ -915,8 +915,8 @@ a {
 
 .w3-display-middle {
   position: absolute;
-  top: 30%;
-  left: 50%;
+  top: 40%;
+  left: 70%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%)
 }
