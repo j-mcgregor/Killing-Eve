@@ -263,6 +263,19 @@ a {
   text-align: center;
 }
 
+.madeBy {
+  opacity:.5;
+}
+
+.madeBy a {
+  text-decoration: none;
+  color: #e4e4e4;
+}
+
+.madeBy a:hover {
+  color: #e9e886;
+}
+
 .w3-table, .w3-table-all {
   border-collapse: collapse;
   border-spacing: 0;
@@ -1754,6 +1767,8 @@ a {
   border-color: #e7ffff !important
 }
 
+
+
 /* Icons */
 .icon-container {
   justify-content: space-around;
@@ -1761,5 +1776,9 @@ a {
 }
 .icon-container i {
   font-size: 2em;
-
+  transition:.1s;
+}
+.icon-container i:hover {
+  color:#902338;
+  text-shadow: 0 0 2px white;
 }
