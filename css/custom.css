@@ -60,11 +60,11 @@ ul li i:hover {
 @media (max-width:415px) {
   .w3-display-bottomcenter {
     position: absolute;
-    width: 300px;
+    /* width: 300px; */
     transform: translateX(-50%) rotate(-90deg);
     transform-origin: 15% -10%;
     left: 115%;
-    bottom: -10%;
+    /* bottom: -10%; */
     font-size: 10px;
     overflow: hidden;
   }
