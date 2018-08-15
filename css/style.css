@@ -258,13 +258,12 @@ a {
   text-align: center;
 }
 
-.madeBy {
-  opacity:.5;
-}
-
+.madeBy,
 .madeBy a {
+  /* opacity:.5; */
+  color:#902338;
   text-decoration: none;
-  color: #e4e4e4;
+  padding-top: 5px;
 }
 
 .madeBy a:hover {
