@@ -11,12 +11,7 @@ html {
 *, *:before, *:after {
   box-sizing: inherit
 }
-.hide-on-small {
-  display:block;
-}
-.show-on-small {
-  display:none;
-}
+
 /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
 
 html {
@@ -751,25 +746,17 @@ a {
   .w3-display-middle {
     position: absolute;
     font-size: .8em;
-    top: 40% !important;
-    left: 60% !important;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%)
+    top: 30% !important;
+    left: 75% !important;
   }
 
   .w3-display-middle img {
-    width:500px !important;
+    width:300px !important;
   }
 
 }
 
 @media (max-width:700px) {
-  .hide-on-small {
-    display:none;
-  }
-  .show-on-small {
-    display:block;
-  }
   .w3-display-middle {
     position: absolute;
     font-size: .8em;
@@ -828,11 +815,11 @@ a {
 @media (max-width:415px) {
   .w3-display-middle {
     position: absolute;
-    top: 35% !important;
-    left: 75% !important;
+    top: 30% !important;
+    left: 80% !important;
   }
   .w3-display-middle img {
-    width:180px !important;
+    width:130px !important;
   }
 }
 

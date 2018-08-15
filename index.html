@@ -4,19 +4,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/custom.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 <style>
-body,h1 {font-family: "Raleway", sans-serif}
-body, html {height: 100%; background:#d23553}
 .bgimg {
     background-image: url('./img/killing eve.png');
     height: 100%;
     background-position: left;
     background-size: contain;
     background-repeat: no-repeat;
+    transform: scale(1.035);
     width: auto;
-    left:0;
+    left:-15px;
+    z-index: 10;
     /* transform: scale(1.1); */
 }
 </style>
@@ -25,22 +26,33 @@ body, html {height: 100%; background:#d23553}
 <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
 
   <div class="w3-display-middle">
-    <img src="img/kilingevetitle.png" class="hide-on-small" alt="">
-    <img src="img/kilingevesmall.png" class="show-on-small" alt="">
+    <img src="img/kilingevetitle.png" alt="">
+    <!-- <img src="img/kilingevesmall.png" class="show-on-small" alt=""> -->
+    <ul class="icon-list-small">
+      <li>
+        <a href="https://www.facebook.com/KillingEveBBCA/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      </li>
+      <li>
+        <a href="https://twitter.com/killingeve" target="_blank"><i class="fab fa-twitter"></i></a>
+      </li>
+      <li>
+        <a href="https://www.imdb.com/title/tt7016936/" target="_blank"><i class="fab fa-imdb"></i></a>
+      </li>
+    </ul>
   </div>
 
   <div class="w3-display-bottomcenter w3-padding-large" style="">
-    <div class="icon-container" style="display:flex;">
-      <div class="icon">
+    <ul class="icon-list-large">
+      <li>
         <a href="https://www.facebook.com/KillingEveBBCA/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-      </div>
-      <div class="icon">
+      </li>
+      <li>
         <a href="https://twitter.com/killingeve" target="_blank"><i class="fab fa-twitter"></i></a>
-      </div>
-      <div class="icon">
+      </li>
+      <li>
         <a href="https://www.imdb.com/title/tt7016936/" target="_blank"><i class="fab fa-imdb"></i></a>
-      </div>
-    </div>
+      </li>
+    </ul>
     <div class="footer">
       <small>Copyright &copy; Sid Gentle Films 2018</small><br>
       <small class="madeBy">Page created by <a href="https://www.linkedin.com/in/jack-mcgregor-ab518393/" target="_blank">Jack McGregor</a></small>
