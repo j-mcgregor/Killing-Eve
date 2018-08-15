@@ -44,7 +44,7 @@ div.littleMain > img {
   position: absolute;
   right:0;
   bottom:0;
-  transform: translateY(-78%);
+  transform: translateY(-80%);
   opacity: .8;
 }
 
@@ -103,7 +103,7 @@ img.SGF {
     position: absolute;
     right:5px;
     bottom:0;
-    transform: translateY(-97%);
+    transform: translateY(-100%);
   }
 
 }
@@ -129,7 +129,7 @@ img.SGF {
     position: absolute;
     right:0;
     bottom:0;
-    transform: translateY(-112%) translateX(-5px);
+    transform: translateY(-114%) translateX(-5px);
   }
 
   .w3-display-bottomright {
