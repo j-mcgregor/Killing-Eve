@@ -42,7 +42,7 @@ div.littleMain {
 div.littleMain > img {
   width:280px;
   position: absolute;
-  right:15px;
+  right:0;
   bottom:0;
   transform: translateY(-78%);
   opacity: .8;
@@ -101,7 +101,7 @@ img.SGF {
   div.littleMain > img {
     width:230px;
     position: absolute;
-    right:10px;
+    right:5px;
     bottom:0;
     transform: translateY(-97%);
   }
