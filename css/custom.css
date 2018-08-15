@@ -31,21 +31,21 @@ ul li i:hover {
 }
 
 div.littleMain {
-  width:100%;
+  width:97vw;
   height:150px;
   background: white;
   position: absolute;
   bottom: 0;
+  right:0;
 }
 
 div.littleMain > img {
   width:280px;
   position: absolute;
-  right:10px;
+  right:15px;
   bottom:0;
   transform: translateY(-78%);
   opacity: .8;
-  background-blend-mode:overlay;
 }
 
 .show-on-x-small {
@@ -127,16 +127,16 @@ img.SGF {
   div.littleMain > img {
     width:200px;
     position: absolute;
-    right:10px;
+    right:0;
     bottom:0;
-    transform: translateY(-112%);
+    transform: translateY(-112%) translateX(-5px);
   }
 
   .w3-display-bottomright {
     color:black;
-    width:200px;
+    /* width:200px; */
     right:0;
-    transform:translate(50px,-20px);
+    /* transform:translate(50px,-20px); */
     /* color: white; */
   }
 
